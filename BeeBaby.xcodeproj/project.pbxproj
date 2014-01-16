@@ -16,11 +16,13 @@
 		BF8C95D804108A23FEB79DF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C9F46C197C940BFDD2246 /* UIKit.framework */; };
 		BF8C97418F45CA1B3AB361B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8C9AAA09824AFB78EA0DF8 /* Main.storyboard */; };
 		BF8C9880FED4DA39718BBE87 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C97773CD6D60DEFCFCB54 /* XCTest.framework */; };
-		BF8C9C65A0729E214F0464E7 /* BeeBabyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C905F01A8E8FAA9931DB8 /* BeeBabyTests.m */; };
 		BF8C9CA43111D800B4939BE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8C92B58FF45F05145B8417 /* Images.xcassets */; };
 		BF8C9CEBFC3F30C716011893 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF8C95F0A517D4537B390978 /* InfoPlist.strings */; };
 		BF8C9E0457CDFD13097A60FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C90C26818D52D2660B4C2 /* ViewController.m */; };
 		BF8C9FC9206ECEA761AEA352 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C909B038C3C71059DDEBB /* Foundation.framework */; };
+		C6C817C9DDF84ADAA74FACFA /* libPods-BeeBabyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E28825E4F71D43198888EDA5 /* libPods-BeeBabyTests.a */; };
+		EBB7F4411887953700AE839B /* ViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB7F4401887953700AE839B /* ViewControllerSpec.m */; };
+		FCDDD318FB254C8DBE98CE7F /* libPods-BeeBaby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E5F8DAA30F47FE902407F3 /* libPods-BeeBaby.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00E5F8DAA30F47FE902407F3 /* libPods-BeeBaby.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeeBaby.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4C7EF9D5174B30AA7FFE94 /* Pods-BeeBaby.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeBaby.xcconfig"; path = "Pods/Pods-BeeBaby.xcconfig"; sourceTree = "<group>"; };
 		BF8C9054A9F194675CE3FC8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BF8C905F01A8E8FAA9931DB8 /* BeeBabyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeeBabyTests.m; sourceTree = "<group>"; };
 		BF8C909B038C3C71059DDEBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF8C90C26818D52D2660B4C2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BF8C91BDE2F45C04D03D6117 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -53,6 +56,9 @@
 		BF8C9D3F85E3E91D97C7CA66 /* BeeBabyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeBabyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8C9DD12597A12497FD6A8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF8C9F46C197C940BFDD2246 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E28825E4F71D43198888EDA5 /* libPods-BeeBabyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeeBabyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB7F4401887953700AE839B /* ViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerSpec.m; sourceTree = "<group>"; };
+		EEB01938729C48AC848F9618 /* Pods-BeeBabyTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeBabyTests.xcconfig"; path = "Pods/Pods-BeeBabyTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 				BF8C9880FED4DA39718BBE87 /* XCTest.framework in Frameworks */,
 				BF8C90FF9D748D031121A31E /* Foundation.framework in Frameworks */,
 				BF8C908F351BD4B72F4658C5 /* UIKit.framework in Frameworks */,
+				C6C817C9DDF84ADAA74FACFA /* libPods-BeeBabyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +80,7 @@
 				BF8C9FC9206ECEA761AEA352 /* Foundation.framework in Frameworks */,
 				BF8C958D410A3C8134EBF17D /* CoreGraphics.framework in Frameworks */,
 				BF8C95D804108A23FEB79DF8 /* UIKit.framework in Frameworks */,
+				FCDDD318FB254C8DBE98CE7F /* libPods-BeeBaby.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				BF8C9EB901F03197E56BE4B9 /* Supporting Files */,
-				BF8C905F01A8E8FAA9931DB8 /* BeeBabyTests.m */,
+				EBB7F4401887953700AE839B /* ViewControllerSpec.m */,
 			);
 			path = BeeBabyTests;
 			sourceTree = "<group>";
@@ -118,6 +126,8 @@
 				BF8C99D9B6E331BF30434C71 /* Frameworks */,
 				BF8C95AE30F8BF2FBCAB3D34 /* BeeBaby */,
 				BF8C9494D9FE38D69B4D8940 /* BeeBabyTests */,
+				7D4C7EF9D5174B30AA7FFE94 /* Pods-BeeBaby.xcconfig */,
+				EEB01938729C48AC848F9618 /* Pods-BeeBabyTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +138,8 @@
 				BF8C99232E2EE0E0D11EFD89 /* CoreGraphics.framework */,
 				BF8C9F46C197C940BFDD2246 /* UIKit.framework */,
 				BF8C97773CD6D60DEFCFCB54 /* XCTest.framework */,
+				00E5F8DAA30F47FE902407F3 /* libPods-BeeBaby.a */,
+				E28825E4F71D43198888EDA5 /* libPods-BeeBabyTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF8C9A1CC7A417F1CCB06B01 /* Build configuration list for PBXNativeTarget "BeeBaby" */;
 			buildPhases = (
+				43FFD13FCD1847958BCC0DFD /* Check Pods Manifest.lock */,
 				BF8C91560DD1CFBC2D844871 /* Sources */,
 				BF8C9B61BC353A1978C55302 /* Frameworks */,
 				BF8C91AACC9E513434521AAB /* Resources */,
+				1DEF2B2C264746A18B1283F4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF8C97777D12FCD7D79B8540 /* Build configuration list for PBXNativeTarget "BeeBabyTests" */;
 			buildPhases = (
+				D8AFCC1501F046DC884625CC /* Check Pods Manifest.lock */,
 				BF8C912720159AD15A53DBE9 /* Sources */,
 				BF8C932725891B2E800580FC /* Frameworks */,
 				BF8C9EE74ECF77B7FD863EF4 /* Resources */,
+				25B529ED9C0942FC891C0B3B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,12 +253,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DEF2B2C264746A18B1283F4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-BeeBaby-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25B529ED9C0942FC891C0B3B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-BeeBabyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43FFD13FCD1847958BCC0DFD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8AFCC1501F046DC884625CC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF8C912720159AD15A53DBE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF8C9C65A0729E214F0464E7 /* BeeBabyTests.m in Sources */,
+				EBB7F4411887953700AE839B /* ViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +375,7 @@
 /* Begin XCBuildConfiguration section */
 		BF8C906BB2C8C0DDCD67419A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEB01938729C48AC848F9618 /* Pods-BeeBabyTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -311,6 +391,7 @@
 		};
 		BF8C92C99F91EBF41C7AA3B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEB01938729C48AC848F9618 /* Pods-BeeBabyTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -398,6 +479,7 @@
 		};
 		BF8C99B8A76E8A4649A47E77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4C7EF9D5174B30AA7FFE94 /* Pods-BeeBaby.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -411,6 +493,7 @@
 		};
 		BF8C9A6810807FA3B48827D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4C7EF9D5174B30AA7FFE94 /* Pods-BeeBaby.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -441,6 +524,7 @@
 				BF8C906BB2C8C0DDCD67419A /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF8C9A1CC7A417F1CCB06B01 /* Build configuration list for PBXNativeTarget "BeeBaby" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +533,7 @@
 				BF8C9A6810807FA3B48827D1 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
