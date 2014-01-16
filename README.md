@@ -38,3 +38,24 @@ __________
 Write tests specs as in ViewControllerSpec.m
 
 ps: "there is a Kiwi template file that helps creating a new spec" - http://markstruzinski.com/blog/2012/08/18/xcode-file-template-for-kiwi-tests/
+
+CONTINOUS INTEGRATION
+___________
+
+Install command line tools:
+
+Run `gcc` on the terminal, the OS will prompt for the commandline tools download.
+
+Install brew:
+
+```
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+```
+
+Install xctool:
+
+```bash
+brew install xctool
+```
+
+Run `ci.sh` on the CI server.
