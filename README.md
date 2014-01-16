@@ -12,6 +12,7 @@ BeeBaby> sudo sh install
 
 Fix the permissions with the following command
 
+```bash
 BeeBaby> sudo chown -R {your_user} {path_to_beebaby_folder}
 ```
 
