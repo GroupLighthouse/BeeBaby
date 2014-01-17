@@ -1,5 +1,5 @@
 //
-//  ViewControllerSpec.m
+//  CameraControllerSpec.m
 //  BeeBaby
 //
 //  Created by Pedro Viegas on 16/01/14.
@@ -7,12 +7,11 @@
 //
 
 #import <Kiwi/Kiwi.h>
-#import "ViewController.h"
+#import "CameraController.h"
 
+SPEC_BEGIN(CameraControllerSpec)
 
-SPEC_BEGIN(ViewControllerSpec)
-
-describe(@"ViewController", ^{
+describe(@"CameraController", ^{
 
 });
 

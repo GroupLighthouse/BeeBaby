@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CameraController.h
 //  BeeBaby
 //
 //  Created by Marlon Santos Constante on 15/01/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CameraController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @end
