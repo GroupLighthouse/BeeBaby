@@ -7,11 +7,11 @@
 //
 
 #import <Kiwi/Kiwi.h>
-#import "CameraController.h"
+#import "BBMainController.h"
 
-SPEC_BEGIN(CameraControllerSpec)
+SPEC_BEGIN(BBMainControllerSpec)
 
-describe(@"CameraController", ^{
+describe(@"BBMainController", ^{
 
 });
 

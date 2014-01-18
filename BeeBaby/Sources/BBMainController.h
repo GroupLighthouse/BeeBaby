@@ -1,5 +1,5 @@
 //
-//  CameraController.h
+//  BBMainController.h
 //  BeeBaby
 //
 //  Created by Marlon Santos Constante on 15/01/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CameraController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface BBMainController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @end

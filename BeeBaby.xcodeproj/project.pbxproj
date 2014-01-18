@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		659B73C981A0829358DF0881 /* BBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B79B3B666E01D9A8FF89E /* BBImagePickerController.m */; };
 		BF8C9071B92D40A2D6C652BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C9B208BAAB86996B8B49A /* main.m */; };
 		BF8C908F351BD4B72F4658C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C9F46C197C940BFDD2246 /* UIKit.framework */; };
 		BF8C90FF9D748D031121A31E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C909B038C3C71059DDEBB /* Foundation.framework */; };
 		BF8C91E0476C13F3FF9D65E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8C932D62B3772E5FD6CED2 /* Main.storyboard */; };
 		BF8C931CFB484D2C8045824E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF8C9D64C965735EEA4F1132 /* InfoPlist.strings */; };
-		BF8C937B6421FCA2DCD0F082 /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C97661E0F4975C047DEF1 /* CameraController.m */; };
+		BF8C937B6421FCA2DCD0F082 /* BBMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C97661E0F4975C047DEF1 /* BBMainController.m */; };
 		BF8C958D410A3C8134EBF17D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C99232E2EE0E0D11EFD89 /* CoreGraphics.framework */; };
 		BF8C95D804108A23FEB79DF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C9F46C197C940BFDD2246 /* UIKit.framework */; };
 		BF8C9880FED4DA39718BBE87 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C97773CD6D60DEFCFCB54 /* XCTest.framework */; };
 		BF8C9CA43111D800B4939BE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8C92B58FF45F05145B8417 /* Images.xcassets */; };
 		BF8C9CEBFC3F30C716011893 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF8C95F0A517D4537B390978 /* InfoPlist.strings */; };
-		BF8C9F6D944577D76E810C9F /* CameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF8C967EDCC4E12E141FFFF8 /* CameraView.xib */; };
 		BF8C9FC9206ECEA761AEA352 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C909B038C3C71059DDEBB /* Foundation.framework */; };
-		BF8C9FD5C925D087753781D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C9A9C63E1F644C58A3AF5 /* AppDelegate.m */; };
+		BF8C9FD5C925D087753781D5 /* BBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C9A9C63E1F644C58A3AF5 /* BBAppDelegate.m */; };
 		C6C817C9DDF84ADAA74FACFA /* libPods-BeeBabyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E28825E4F71D43198888EDA5 /* libPods-BeeBabyTests.a */; };
-		EBB7F4411887953700AE839B /* CameraControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB7F4401887953700AE839B /* CameraControllerSpec.m */; };
+		EBB7F4411887953700AE839B /* BBMainControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB7F4401887953700AE839B /* BBMainControllerSpec.m */; };
 		FCDDD318FB254C8DBE98CE7F /* libPods-BeeBaby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E5F8DAA30F47FE902407F3 /* libPods-BeeBaby.a */; };
 /* End PBXBuildFile section */
 
@@ -38,20 +38,21 @@
 
 /* Begin PBXFileReference section */
 		00E5F8DAA30F47FE902407F3 /* libPods-BeeBaby.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeeBaby.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		659B74DC527C279A8BC77854 /* BBImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBImagePickerController.h; sourceTree = "<group>"; };
+		659B79B3B666E01D9A8FF89E /* BBImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBImagePickerController.m; sourceTree = "<group>"; };
 		7D4C7EF9D5174B30AA7FFE94 /* Pods-BeeBaby.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeBaby.xcconfig"; path = "Pods/Pods-BeeBaby.xcconfig"; sourceTree = "<group>"; };
 		BF8C9054A9F194675CE3FC8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF8C909B038C3C71059DDEBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF8C92B58FF45F05145B8417 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BF8C9549F07DF4D0004A0402 /* BeeBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8C95A76BF04CD791D40E98 /* BeeBaby-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "BeeBaby-Info.plist"; sourceTree = "<group>"; };
-		BF8C95FF33115398E23193E5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BF8C967EDCC4E12E141FFFF8 /* CameraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraView.xib; sourceTree = "<group>"; };
-		BF8C97661E0F4975C047DEF1 /* CameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraController.m; sourceTree = "<group>"; };
+		BF8C95FF33115398E23193E5 /* BBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAppDelegate.h; sourceTree = "<group>"; };
+		BF8C97661E0F4975C047DEF1 /* BBMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMainController.m; sourceTree = "<group>"; };
 		BF8C97773CD6D60DEFCFCB54 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		BF8C991D2DE7A98C64841EE7 /* CameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraController.h; sourceTree = "<group>"; };
+		BF8C991D2DE7A98C64841EE7 /* BBMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMainController.h; sourceTree = "<group>"; };
 		BF8C99232E2EE0E0D11EFD89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BF8C99DC2BCC9F8D50CF2090 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BF8C9A9C63E1F644C58A3AF5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF8C9A9C63E1F644C58A3AF5 /* BBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAppDelegate.m; sourceTree = "<group>"; };
 		BF8C9B208BAAB86996B8B49A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF8C9BCA20191DC0053B1E92 /* BeeBabyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "BeeBabyTests-Info.plist"; sourceTree = "<group>"; };
 		BF8C9D1A660165B47323C787 /* BeeBaby-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeeBaby-Prefix.pch"; sourceTree = "<group>"; };
@@ -59,7 +60,7 @@
 		BF8C9E3004751576635DD643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BeeBaby/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		BF8C9F46C197C940BFDD2246 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E28825E4F71D43198888EDA5 /* libPods-BeeBabyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeeBabyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBB7F4401887953700AE839B /* CameraControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraControllerSpec.m; sourceTree = "<group>"; };
+		EBB7F4401887953700AE839B /* BBMainControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMainControllerSpec.m; sourceTree = "<group>"; };
 		EEB01938729C48AC848F9618 /* Pods-BeeBabyTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeBabyTests.xcconfig"; path = "Pods/Pods-BeeBabyTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,10 +102,9 @@
 		BF8C928AAA4C70E0D6DDF2C0 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				BF8C9A9C63E1F644C58A3AF5 /* AppDelegate.m */,
-				BF8C991D2DE7A98C64841EE7 /* CameraController.h */,
-				BF8C97661E0F4975C047DEF1 /* CameraController.m */,
-				BF8C95FF33115398E23193E5 /* AppDelegate.h */,
+				EB449B24188A70BC00D974F7 /* Controllers */,
+				BF8C9A9C63E1F644C58A3AF5 /* BBAppDelegate.m */,
+				BF8C95FF33115398E23193E5 /* BBAppDelegate.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -113,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				BF8C9EB901F03197E56BE4B9 /* Supporting Files */,
-				EBB7F4401887953700AE839B /* CameraControllerSpec.m */,
+				EBB7F4401887953700AE839B /* BBMainControllerSpec.m */,
 			);
 			path = BeeBabyTests;
 			sourceTree = "<group>";
@@ -158,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				BF8C932D62B3772E5FD6CED2 /* Main.storyboard */,
-				BF8C967EDCC4E12E141FFFF8 /* CameraView.xib */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -181,6 +180,17 @@
 				BF8C9D1A660165B47323C787 /* BeeBaby-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB449B24188A70BC00D974F7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF8C991D2DE7A98C64841EE7 /* BBMainController.h */,
+				BF8C97661E0F4975C047DEF1 /* BBMainController.m */,
+				659B74DC527C279A8BC77854 /* BBImagePickerController.h */,
+				659B79B3B666E01D9A8FF89E /* BBImagePickerController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +241,7 @@
 		BF8C9571380C6EF4AAEE1697 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = BB;
 				ORGANIZATIONNAME = Lighthouse;
 			};
 			buildConfigurationList = BF8C96B3496EE1559BA287E0 /* Build configuration list for PBXProject "BeeBaby" */;
@@ -259,7 +270,6 @@
 				BF8C931CFB484D2C8045824E /* InfoPlist.strings in Resources */,
 				BF8C9CA43111D800B4939BE1 /* Images.xcassets in Resources */,
 				BF8C91E0476C13F3FF9D65E9 /* Main.storyboard in Resources */,
-				BF8C9F6D944577D76E810C9F /* CameraView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBB7F4411887953700AE839B /* CameraControllerSpec.m in Sources */,
+				EBB7F4411887953700AE839B /* BBMainControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +360,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF8C9071B92D40A2D6C652BD /* main.m in Sources */,
-				BF8C9FD5C925D087753781D5 /* AppDelegate.m in Sources */,
-				BF8C937B6421FCA2DCD0F082 /* CameraController.m in Sources */,
+				BF8C9FD5C925D087753781D5 /* BBAppDelegate.m in Sources */,
+				BF8C937B6421FCA2DCD0F082 /* BBMainController.m in Sources */,
+				659B73C981A0829358DF0881 /* BBImagePickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

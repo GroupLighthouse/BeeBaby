@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  BBAppDelegate.h
 //  BeeBaby
 //
 //  Created by Marlon Santos Constante on 15/01/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface BBAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
