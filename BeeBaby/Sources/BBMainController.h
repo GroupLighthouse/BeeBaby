@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Lighthouse. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface BBMainController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface BBMainController : UIViewController
 
 @end

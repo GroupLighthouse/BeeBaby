@@ -11,9 +11,8 @@
 
 @interface BBMainController ()
 
-@property(strong, nonatomic) IBOutlet UIView *cameraView;
-@property(nonatomic) UIImagePickerController *imagePickerController;
-@property(nonatomic) NSMutableArray *images;
+@property (strong, nonatomic) IBOutlet UIView *cameraView;
+@property (nonatomic) UIImagePickerController *imagePickerController;
 
 @end
 
@@ -21,19 +20,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _images = [[NSMutableArray alloc] init];
-    [self showImagePickerForCamera];
+    [self showImagePicker];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
-- (void)showImagePickerForCamera {
+- (void)showImagePicker {
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         [self showImagePickerForSourceType:UIImagePickerControllerSourceTypeCamera];
-    }
-    else {
+    } else {
         [self showImagePickerForSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
     }
 }
@@ -46,25 +43,6 @@
 
 - (IBAction)takePhoto:(id)sender {
     [_imagePickerController takePicture];
-}
-
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    UIImage *image = [info valueForKey:UIImagePickerControllerOriginalImage];
-    [_images addObject:image];
-
-    NSLog(@"Número de fotos: %d", [_images count]);
-
-    if ([_images count] == 10) {
-        [self savePhotos];
-        _imagePickerController = nil;
-    }
-}
-
-- (void)savePhotos {
-    for (UIImage *image in _images) {
-        UIImageWriteToSavedPhotosAlbum(image, self, nil, nil);
-    }
-    [_images removeAllObjects];
 }
 
 @end

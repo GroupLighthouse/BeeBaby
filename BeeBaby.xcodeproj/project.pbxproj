@@ -11,7 +11,7 @@
 		BF8C9071B92D40A2D6C652BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C9B208BAAB86996B8B49A /* main.m */; };
 		BF8C908F351BD4B72F4658C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C9F46C197C940BFDD2246 /* UIKit.framework */; };
 		BF8C90FF9D748D031121A31E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C909B038C3C71059DDEBB /* Foundation.framework */; };
-		BF8C91E0476C13F3FF9D65E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8C932D62B3772E5FD6CED2 /* Main.storyboard */; };
+		BF8C92E3E66F7F0E77F71059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8C974498D32B8B09F8BB81 /* Main.storyboard */; };
 		BF8C931CFB484D2C8045824E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF8C9D64C965735EEA4F1132 /* InfoPlist.strings */; };
 		BF8C937B6421FCA2DCD0F082 /* BBMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C97661E0F4975C047DEF1 /* BBMainController.m */; };
 		BF8C958D410A3C8134EBF17D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C99232E2EE0E0D11EFD89 /* CoreGraphics.framework */; };
@@ -38,11 +38,14 @@
 
 /* Begin PBXFileReference section */
 		00E5F8DAA30F47FE902407F3 /* libPods-BeeBaby.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeeBaby.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3711A32C188D4F3000179445 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3711A32D188D4F3000179445 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		659B74DC527C279A8BC77854 /* BBImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBImagePickerController.h; sourceTree = "<group>"; };
 		659B79B3B666E01D9A8FF89E /* BBImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBImagePickerController.m; sourceTree = "<group>"; };
 		7D4C7EF9D5174B30AA7FFE94 /* Pods-BeeBaby.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeBaby.xcconfig"; path = "Pods/Pods-BeeBaby.xcconfig"; sourceTree = "<group>"; };
 		BF8C9054A9F194675CE3FC8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF8C909B038C3C71059DDEBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF8C91CF79BAF1F4DD62B6D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF8C92B58FF45F05145B8417 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BF8C9549F07DF4D0004A0402 /* BeeBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8C95A76BF04CD791D40E98 /* BeeBaby-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "BeeBaby-Info.plist"; sourceTree = "<group>"; };
@@ -57,7 +60,6 @@
 		BF8C9BCA20191DC0053B1E92 /* BeeBabyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "BeeBabyTests-Info.plist"; sourceTree = "<group>"; };
 		BF8C9D1A660165B47323C787 /* BeeBaby-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeeBaby-Prefix.pch"; sourceTree = "<group>"; };
 		BF8C9D3F85E3E91D97C7CA66 /* BeeBabyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeBabyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF8C9E3004751576635DD643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = BeeBaby/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		BF8C9F46C197C940BFDD2246 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E28825E4F71D43198888EDA5 /* libPods-BeeBabyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeeBabyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB7F4401887953700AE839B /* BBMainControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMainControllerSpec.m; sourceTree = "<group>"; };
@@ -124,7 +126,7 @@
 				BF8C9F237C6BD3FE907BB08A /* Supporting Files */,
 				BF8C92B58FF45F05145B8417 /* Images.xcassets */,
 				BF8C928AAA4C70E0D6DDF2C0 /* Sources */,
-				BF8C9DBCDCC1175940C3B788 /* Layouts */,
+				BF8C9E84FFD27719397C18F6 /* Storyboards */,
 			);
 			path = BeeBaby;
 			sourceTree = "<group>";
@@ -154,12 +156,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BF8C9DBCDCC1175940C3B788 /* Layouts */ = {
+		BF8C9E84FFD27719397C18F6 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				BF8C932D62B3772E5FD6CED2 /* Main.storyboard */,
+				BF8C974498D32B8B09F8BB81 /* Main.storyboard */,
 			);
-			path = Layouts;
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 		BF8C9EB901F03197E56BE4B9 /* Supporting Files */ = {
@@ -250,6 +252,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				pt,
 			);
 			mainGroup = BF8C986C79F043E966B350AF;
 			productRefGroup = BF8C922972820974EBD984E5 /* Products */;
@@ -269,7 +272,7 @@
 			files = (
 				BF8C931CFB484D2C8045824E /* InfoPlist.strings in Resources */,
 				BF8C9CA43111D800B4939BE1 /* Images.xcassets in Resources */,
-				BF8C91E0476C13F3FF9D65E9 /* Main.storyboard in Resources */,
+				BF8C92E3E66F7F0E77F71059 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,26 +380,28 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BF8C932D62B3772E5FD6CED2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BF8C9E3004751576635DD643 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BF8C95F0A517D4537B390978 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BF8C9054A9F194675CE3FC8D /* en */,
+				3711A32D188D4F3000179445 /* pt */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BF8C974498D32B8B09F8BB81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8C91CF79BAF1F4DD62B6D3 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		BF8C9D64C965735EEA4F1132 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BF8C99DC2BCC9F8D50CF2090 /* en */,
+				3711A32C188D4F3000179445 /* pt */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
