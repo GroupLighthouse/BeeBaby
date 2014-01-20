@@ -84,4 +84,12 @@ static NSString * const ALBUM_NAME = @"BeeBaby";
     _album = nil;
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
+- (UIViewController *)childViewControllerForStatusBarHidden {
+    return nil;
+}
+
 @end
