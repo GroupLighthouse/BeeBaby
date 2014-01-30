@@ -4,6 +4,40 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
+        <!--Timeline Table View Controller-->
+        <scene sceneID="wCH-QK-xEM">
+            <objects>
+                <viewController storyboardIdentifier="TimelineTableView" id="qqe-W5-rNR" customClass="BBTimelineTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="414" sectionHeaderHeight="22" sectionFooterHeight="22" id="kZX-S3-mP9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="390" id="irx-rP-rfT">
+                                <rect key="frame" x="0.0" y="22" width="320" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="irx-rP-rfT" id="dsV-aj-R4e">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="389"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3qT-sR-Hzz">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                        <view tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wEG-gs-xv8">
+                                            <rect key="frame" x="0.0" y="240" width="320" height="150"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </view>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zRd-AM-7P9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-752" y="-1642"/>
+        </scene>
         <!--Image Collection View Controller-->
         <scene sceneID="z21-oK-d1R">
             <objects>
@@ -65,46 +99,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TB7-jS-bIb">
-                                <rect key="frame" x="135" y="410" width="50" height="50"/>
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rte-qE-vg5">
+                                <rect key="frame" x="0.0" y="390" width="320" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TB7-jS-bIb">
+                                        <rect key="frame" x="125" y="10" width="70" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="camera_lens"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="takePhoto:" destination="4vK-bQ-hrg" eventType="touchUpInside" id="CpO-DP-MU3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCh-7i-Go6">
+                                        <rect key="frame" x="20" y="28" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="gallery"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="openGallery:" destination="4vK-bQ-hrg" eventType="touchUpInside" id="Nab-ZL-B8o"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="icon camera"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="toolbar"/>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="takePhoto:" destination="4vK-bQ-hrg" eventType="touchUpInside" id="CpO-DP-MU3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCh-7i-Go6">
-                                <rect key="frame" x="20" y="425" width="35" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="35" id="R12-D1-yzO"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="styleClass" value="icon gallery"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="openGallery:" destination="4vK-bQ-hrg" eventType="touchUpInside" id="Nab-ZL-B8o"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="TB7-jS-bIb" firstAttribute="leading" secondItem="mCh-7i-Go6" secondAttribute="trailing" constant="80" id="6L3-1j-e1p"/>
-                            <constraint firstItem="mCh-7i-Go6" firstAttribute="bottom" secondItem="TB7-jS-bIb" secondAttribute="bottom" id="Gg8-p2-tls"/>
-                            <constraint firstAttribute="bottom" secondItem="mCh-7i-Go6" secondAttribute="bottom" constant="20" symbolic="YES" id="IrH-qb-iRE"/>
-                            <constraint firstItem="mCh-7i-Go6" firstAttribute="leading" secondItem="jna-iX-u0S" secondAttribute="leading" constant="20" symbolic="YES" id="IxF-O5-AgS"/>
-                            <constraint firstItem="mCh-7i-Go6" firstAttribute="top" secondItem="VId-iw-KyT" secondAttribute="bottom" constant="361" id="TWv-9A-ZOt"/>
-                            <constraint firstItem="TB7-jS-bIb" firstAttribute="top" secondItem="VId-iw-KyT" secondAttribute="bottom" constant="346" id="Xbh-Bt-yji"/>
-                            <constraint firstItem="TB7-jS-bIb" firstAttribute="centerX" secondItem="jna-iX-u0S" secondAttribute="centerX" id="bir-Nk-Gzi"/>
+                            <constraint firstAttribute="trailing" secondItem="rte-qE-vg5" secondAttribute="trailing" id="9Zd-tm-FC7"/>
+                            <constraint firstItem="rte-qE-vg5" firstAttribute="leading" secondItem="jna-iX-u0S" secondAttribute="leading" id="9gf-NB-zfj"/>
+                            <constraint firstItem="rte-qE-vg5" firstAttribute="top" secondItem="VId-iw-KyT" secondAttribute="bottom" constant="326" id="Bwo-AN-aZI"/>
+                            <constraint firstAttribute="bottom" secondItem="rte-qE-vg5" secondAttribute="bottom" id="Wlk-cP-5ix"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lN7-nC-9jd"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="cameraView" destination="jna-iX-u0S" id="z1c-aa-QnE"/>
-                        <outlet property="galleryButton" destination="mCh-7i-Go6" id="Inh-dM-j9P"/>
-                        <outlet property="photoButton" destination="TB7-jS-bIb" id="Y8W-ai-ThK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RLz-hf-0f2" userLabel="First Responder" sceneMemberID="firstResponder"/>

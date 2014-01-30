@@ -11,4 +11,3 @@ end
 target "BeeBabyTests", :exclusive => true do
     pod 'Kiwi/XCTest'
 end
-

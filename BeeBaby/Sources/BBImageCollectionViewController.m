@@ -4,6 +4,8 @@
 //
 
 #import "BBImageCollectionViewController.h"
+#import "BBUIUtils.h"
+#import "BBTimelineTableViewController.h"
 
 @implementation BBImageCollectionViewController
 
@@ -11,19 +13,10 @@
     [super viewDidLoad];
 
     [self.navigationItem setTitle:NSLocalizedString(@"photos", nil)];
-    [self.navigationItem setLeftBarButtonItem:[self buildBarButtonItemWithStyleClass:@"camera" andAction:@selector(close:)]];
-    [self.navigationItem setRightBarButtonItem:[self buildBarButtonItemWithStyleClass:@"check-circle" andAction:@selector(close:)]];
+    [self.navigationItem setLeftBarButtonItem:[BBUIUtils buildBarButtonItemWithTarget:self andAction:@selector(close:) andStyleClass:@"camera"]];
+    [self.navigationItem setRightBarButtonItem:[BBUIUtils buildBarButtonItemWithTarget:self andAction:@selector(openTimeline:) andStyleClass:@"check-circle"]];
 
     [self.collectionView setDataSource:self];
-}
-
-- (UIBarButtonItem *)buildBarButtonItemWithStyleClass:(NSString *)styleClass andAction:(SEL)action {
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0.f, 0.f, 25.f, 25.f)];
-    [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
-    [button setStyleClass:styleClass];
-
-    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
-    return barButtonItem;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -58,6 +51,17 @@
         [imageView setStyleClass:@"opaque"];
         [check setHidden:YES];
     }
+}
+
+- (IBAction)openTimeline:(id)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    BBTimelineTableViewController *timelineTableView = [storyboard instantiateViewControllerWithIdentifier:@"TimelineTableView"];
+    [timelineTableView setTimelines:self.images];
+
+    UINavigationController *navigationController = [[UINavigationController alloc] init];
+    [navigationController pushViewController:timelineTableView animated:NO];
+
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
 - (IBAction)close:(id)sender {

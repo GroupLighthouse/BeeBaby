@@ -32,8 +32,8 @@ static NSString * const ALBUM_NAME = @"BeeBaby";
             [self setCameraOverlayView:cameraView];
         }
 
-        self.images = [[NSMutableArray alloc] init];
-        self.library = [[ALAssetsLibrary alloc] init];
+        [self setImages: [[NSMutableArray alloc] init]];
+        [self setLibrary: [[ALAssetsLibrary alloc] init]];
     }
     return self;
 }
@@ -91,11 +91,11 @@ static NSString * const ALBUM_NAME = @"BeeBaby";
     [self loadAlbum];
 
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    BBImageCollectionViewController *gallery = [storyboard instantiateViewControllerWithIdentifier:@"ImageCollectionView"];
-    [gallery setImages:self.images];
+    BBImageCollectionViewController *imageCollectionView = [storyboard instantiateViewControllerWithIdentifier:@"ImageCollectionView"];
+    [imageCollectionView setImages:self.images];
 
     UINavigationController *navigationController = [[UINavigationController alloc] init];
-    [navigationController pushViewController:gallery animated:NO];
+    [navigationController pushViewController:imageCollectionView animated:NO];
 
     [self presentViewController:navigationController animated:YES completion:nil];
 }

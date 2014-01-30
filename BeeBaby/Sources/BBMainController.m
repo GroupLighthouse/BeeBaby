@@ -15,8 +15,6 @@
 
 @property (strong, nonatomic) IBOutlet UIView *cameraView;
 @property (strong, nonatomic) BBImagePickerController *imagePickerController;
-@property (strong, nonatomic) IBOutlet UIButton *photoButton;
-@property (strong, nonatomic) IBOutlet UIButton *galleryButton;
 
 @end
 
@@ -56,8 +54,10 @@
                 break;
         }
         CGAffineTransform transform = CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(rotate));
-        [self.photoButton setTransform:transform];
-        [self.galleryButton setTransform:transform];
+        for (UIView *view in [[self.view viewWithTag:1] subviews]) {
+            [view setTransform:transform];
+            [view setTransform:transform];
+        }
     }];
 }
 
