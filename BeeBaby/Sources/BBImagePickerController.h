@@ -11,6 +11,8 @@
 
 @interface BBImagePickerController : UIImagePickerController <UIImagePickerControllerDelegate>
 
-- (id)initWith:(UIImagePickerControllerSourceType)sourceType andView:(UIView *)cameraView;
+- (id)initWithSourceType:(UIImagePickerControllerSourceType)sourceType andView:(UIView *)cameraView;
+
+-(void)openGallery;
 
 @end

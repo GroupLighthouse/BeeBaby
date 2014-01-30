@@ -9,10 +9,14 @@
 #import "BBMainController.h"
 #import "BBImagePickerController.h"
 
+#define DEGREES_TO_RADIANS(x) (M_PI * (x) / 180.0)
+
 @interface BBMainController ()
 
 @property (strong, nonatomic) IBOutlet UIView *cameraView;
-@property (nonatomic) UIImagePickerController *imagePickerController;
+@property (strong, nonatomic) BBImagePickerController *imagePickerController;
+@property (strong, nonatomic) IBOutlet UIButton *photoButton;
+@property (strong, nonatomic) IBOutlet UIButton *galleryButton;
 
 @end
 
@@ -20,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self beginGeneratingDeviceOrientationNotifications];
     [self showImagePicker];
 }
 
@@ -27,8 +32,37 @@
     [super didReceiveMemoryWarning];
 }
 
+-(void)beginGeneratingDeviceOrientationNotifications {
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didRotation:) name:UIDeviceOrientationDidChangeNotification object:nil];
+}
+
+- (void)didRotation:(NSNotification *)notification {
+    [UIView animateWithDuration:0.2f animations:^{
+        int rotate;
+        UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+        switch (orientation) {
+            case UIDeviceOrientationLandscapeLeft:
+                rotate = 90;
+                break;
+            case UIDeviceOrientationPortraitUpsideDown:
+                rotate = 180;
+                break;
+            case UIDeviceOrientationLandscapeRight:
+                rotate = 270;
+                break;
+            default:
+                rotate = 0;
+                break;
+        }
+        CGAffineTransform transform = CGAffineTransformMakeRotation(DEGREES_TO_RADIANS(rotate));
+        [self.photoButton setTransform:transform];
+        [self.galleryButton setTransform:transform];
+    }];
+}
+
 - (void)showImagePicker {
-    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+    if ([BBImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         [self showImagePickerForSourceType:UIImagePickerControllerSourceTypeCamera];
     } else {
         [self showImagePickerForSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum];
@@ -36,13 +70,20 @@
 }
 
 - (void)showImagePickerForSourceType:(UIImagePickerControllerSourceType)sourceType {
-    _imagePickerController = [[BBImagePickerController alloc] initWith:sourceType andView:_cameraView];
-    [self presentViewController:_imagePickerController animated:NO completion:nil];
-
+    self.imagePickerController = [[BBImagePickerController alloc] initWithSourceType:sourceType andView:self.cameraView];
+    [self presentViewController:self.imagePickerController animated:NO completion:nil];
 }
 
 - (IBAction)takePhoto:(id)sender {
-    [_imagePickerController takePicture];
+    [self.view setBackgroundColor:[[UIColor alloc] initWithRed:255.f green:255.f blue:255.f alpha:0.7f]];
+    [self.imagePickerController takePicture];
+    [UIView animateWithDuration:0.3f animations:^{
+        [self.view setBackgroundColor:[UIColor clearColor]];
+    }];
+}
+
+- (IBAction)openGallery:(id)sender {
+    [self.imagePickerController openGallery];
 }
 
 @end

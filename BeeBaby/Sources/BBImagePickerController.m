@@ -7,12 +7,13 @@
 //
 
 #import "BBImagePickerController.h"
+#import "BBImageCollectionViewController.h"
 
 @interface BBImagePickerController()
 
-    @property (nonatomic) NSMutableArray *images;
-    @property (nonatomic) ALAssetsLibrary *library;
-    @property (nonatomic) ALAssetsGroup *album;
+    @property (strong, nonatomic) NSMutableArray *images;
+    @property (strong, nonatomic) ALAssetsLibrary *library;
+    @property (strong, nonatomic) ALAssetsGroup *album;
 
 @end
 
@@ -20,7 +21,7 @@
 
 static NSString * const ALBUM_NAME = @"BeeBaby";
 
-- (id)initWith:(UIImagePickerControllerSourceType)sourceType andView:(UIView *)cameraView {
+- (id)initWithSourceType:(UIImagePickerControllerSourceType)sourceType andView:(UIView *)cameraView {
     self = [super init];
     if (self) {
         [self setDelegate:self];
@@ -31,14 +32,18 @@ static NSString * const ALBUM_NAME = @"BeeBaby";
             [self setCameraOverlayView:cameraView];
         }
 
-        _images = [[NSMutableArray alloc] init];
-        _library = [[ALAssetsLibrary alloc] init];
+        self.images = [[NSMutableArray alloc] init];
+        self.library = [[ALAssetsLibrary alloc] init];
     }
     return self;
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
 - (void) createAlbum {
-    [_library addAssetsGroupAlbumWithName:ALBUM_NAME resultBlock:^(ALAssetsGroup *group) {
+    [self.library addAssetsGroupAlbumWithName:ALBUM_NAME resultBlock:^(ALAssetsGroup *group) {
         NSLog(@"Álbum %@ criado", ALBUM_NAME);
     } failureBlock:^(NSError *error) {
         NSLog(@"Ocorreu um erro ao criar o álbum %@", ALBUM_NAME);
@@ -46,9 +51,9 @@ static NSString * const ALBUM_NAME = @"BeeBaby";
 }
 
 - (void) loadAlbum {
-    [_library enumerateGroupsWithTypes:ALAssetsGroupAlbum usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+    [self.library enumerateGroupsWithTypes:ALAssetsGroupAlbum usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
         if ([[group valueForProperty:ALAssetsGroupPropertyName] isEqualToString:ALBUM_NAME]) {
-            _album = group;
+            self.album = group;
             *stop = YES;
             NSLog(@"Álbum %@ encontrado", ALBUM_NAME);
         }
@@ -58,7 +63,8 @@ static NSString * const ALBUM_NAME = @"BeeBaby";
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    [self savePhoto: info];
+    UIImage *image = [info valueForKey:UIImagePickerControllerOriginalImage];
+    [self.images addObject:image];
 }
 
 - (void)savePhoto:(NSDictionary *)info {
@@ -66,12 +72,11 @@ static NSString * const ALBUM_NAME = @"BeeBaby";
     [self loadAlbum];
 
     UIImage *image = [info valueForKey:UIImagePickerControllerOriginalImage];
-    NSDictionary *metadata = [info objectForKey:UIImagePickerControllerMediaMetadata];
 
-    [_library writeImageToSavedPhotosAlbum:[image CGImage] metadata:metadata completionBlock:^(NSURL *assetURL, NSError *error) {
-        if (error.code == 0) {
-            [_library assetForURL:assetURL resultBlock:^(ALAsset *asset) {
-              [_album addAsset:asset];
+    [self.library writeImageToSavedPhotosAlbum:[image CGImage] orientation:(ALAssetOrientation)image.imageOrientation completionBlock:^(NSURL *assetURL, NSError *error) {
+        if (error != nil) {
+            [self.library assetForURL:assetURL resultBlock:^(ALAsset *asset) {
+              [self.album addAsset:asset];
             } failureBlock:^(NSError *error) {
                 NSLog(@"Ocorreu um erro ao salvar a foto no álbum %@", ALBUM_NAME);
             }];
@@ -79,9 +84,20 @@ static NSString * const ALBUM_NAME = @"BeeBaby";
             NSLog(@"Ocorreu um erro ao salvar a foto no álbum %@", ALBUM_NAME);
         }
     }];
+}
 
-    [_images addObject:image];
-    _album = nil;
+-(void)openGallery {
+    [self createAlbum];
+    [self loadAlbum];
+
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    BBImageCollectionViewController *gallery = [storyboard instantiateViewControllerWithIdentifier:@"ImageCollectionView"];
+    [gallery setImages:self.images];
+
+    UINavigationController *navigationController = [[UINavigationController alloc] init];
+    [navigationController pushViewController:gallery animated:NO];
+
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
 - (BOOL)prefersStatusBarHidden {

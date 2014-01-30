@@ -7,16 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		373910211897C6D0002E4BDC /* Pixate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373910201897C6D0002E4BDC /* Pixate.framework */; };
+		373910231897C876002E4BDC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373910221897C876002E4BDC /* CoreText.framework */; };
+		373910251897C893002E4BDC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373910241897C893002E4BDC /* QuartzCore.framework */; };
+		373910301897F2FF002E4BDC /* icon-gallery.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3739102F1897F2FF002E4BDC /* icon-gallery.svg */; };
+		373910331899188D002E4BDC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 373910351899188D002E4BDC /* Localizable.strings */; };
 		659B73C981A0829358DF0881 /* BBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B79B3B666E01D9A8FF89E /* BBImagePickerController.m */; };
 		BF8C9071B92D40A2D6C652BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C9B208BAAB86996B8B49A /* main.m */; };
 		BF8C908F351BD4B72F4658C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C9F46C197C940BFDD2246 /* UIKit.framework */; };
 		BF8C90FF9D748D031121A31E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C909B038C3C71059DDEBB /* Foundation.framework */; };
+		BF8C910AB8B7CDE8D37CC585 /* icon-check.svg in Resources */ = {isa = PBXBuildFile; fileRef = BF8C9C2DFF02FB49CD1C3A86 /* icon-check.svg */; };
+		BF8C91802543E2CC0A86F84F /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = BF8C9873DDA5BC83FC085B23 /* default.css */; };
 		BF8C92E3E66F7F0E77F71059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8C974498D32B8B09F8BB81 /* Main.storyboard */; };
 		BF8C931CFB484D2C8045824E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF8C9D64C965735EEA4F1132 /* InfoPlist.strings */; };
+		BF8C937AFE91B273A99ADC88 /* BBImageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C93B9AFA0FAD1FAAA55E0 /* BBImageCollectionViewController.m */; };
 		BF8C937B6421FCA2DCD0F082 /* BBMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8C97661E0F4975C047DEF1 /* BBMainController.m */; };
 		BF8C958D410A3C8134EBF17D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C99232E2EE0E0D11EFD89 /* CoreGraphics.framework */; };
 		BF8C95D804108A23FEB79DF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C9F46C197C940BFDD2246 /* UIKit.framework */; };
 		BF8C9880FED4DA39718BBE87 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C97773CD6D60DEFCFCB54 /* XCTest.framework */; };
+		BF8C99B427FD367701956FE9 /* icon-check-circle.svg in Resources */ = {isa = PBXBuildFile; fileRef = BF8C9F3815FF8258A58248BF /* icon-check-circle.svg */; };
+		BF8C9B636C3551CA2B3B79C0 /* icon-camera.svg in Resources */ = {isa = PBXBuildFile; fileRef = BF8C9CA2F796E1A53FDE075E /* icon-camera.svg */; };
 		BF8C9CA43111D800B4939BE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8C92B58FF45F05145B8417 /* Images.xcassets */; };
 		BF8C9CEBFC3F30C716011893 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF8C95F0A517D4537B390978 /* InfoPlist.strings */; };
 		BF8C9FC9206ECEA761AEA352 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8C909B038C3C71059DDEBB /* Foundation.framework */; };
@@ -40,6 +50,12 @@
 		00E5F8DAA30F47FE902407F3 /* libPods-BeeBaby.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeeBaby.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3711A32C188D4F3000179445 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3711A32D188D4F3000179445 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		373910201897C6D0002E4BDC /* Pixate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pixate.framework; sourceTree = "<group>"; };
+		373910221897C876002E4BDC /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		373910241897C893002E4BDC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3739102F1897F2FF002E4BDC /* icon-gallery.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "icon-gallery.svg"; sourceTree = "<group>"; };
+		3739103618991891002E4BDC /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3739103718991892002E4BDC /* pt */ = {isa = PBXFileReference; lastKnownFileType = file; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		659B74DC527C279A8BC77854 /* BBImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBImagePickerController.h; sourceTree = "<group>"; };
 		659B79B3B666E01D9A8FF89E /* BBImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBImagePickerController.m; sourceTree = "<group>"; };
 		7D4C7EF9D5174B30AA7FFE94 /* Pods-BeeBaby.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeBaby.xcconfig"; path = "Pods/Pods-BeeBaby.xcconfig"; sourceTree = "<group>"; };
@@ -47,19 +63,25 @@
 		BF8C909B038C3C71059DDEBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF8C91CF79BAF1F4DD62B6D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF8C92B58FF45F05145B8417 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF8C93B9AFA0FAD1FAAA55E0 /* BBImageCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBImageCollectionViewController.m; sourceTree = "<group>"; };
 		BF8C9549F07DF4D0004A0402 /* BeeBaby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeBaby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8C95A76BF04CD791D40E98 /* BeeBaby-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "BeeBaby-Info.plist"; sourceTree = "<group>"; };
 		BF8C95FF33115398E23193E5 /* BBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAppDelegate.h; sourceTree = "<group>"; };
+		BF8C9667ED67CFC68111FF64 /* BBImageCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBImageCollectionViewController.h; sourceTree = "<group>"; };
 		BF8C97661E0F4975C047DEF1 /* BBMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMainController.m; sourceTree = "<group>"; };
 		BF8C97773CD6D60DEFCFCB54 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BF8C9873DDA5BC83FC085B23 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
 		BF8C991D2DE7A98C64841EE7 /* BBMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMainController.h; sourceTree = "<group>"; };
 		BF8C99232E2EE0E0D11EFD89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BF8C99DC2BCC9F8D50CF2090 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BF8C9A9C63E1F644C58A3AF5 /* BBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAppDelegate.m; sourceTree = "<group>"; };
 		BF8C9B208BAAB86996B8B49A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BF8C9BCA20191DC0053B1E92 /* BeeBabyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "BeeBabyTests-Info.plist"; sourceTree = "<group>"; };
+		BF8C9C2DFF02FB49CD1C3A86 /* icon-check.svg */ = {isa = PBXFileReference; lastKnownFileType = file.svg; path = "icon-check.svg"; sourceTree = "<group>"; };
+		BF8C9CA2F796E1A53FDE075E /* icon-camera.svg */ = {isa = PBXFileReference; lastKnownFileType = file.svg; path = "icon-camera.svg"; sourceTree = "<group>"; };
 		BF8C9D1A660165B47323C787 /* BeeBaby-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeeBaby-Prefix.pch"; sourceTree = "<group>"; };
 		BF8C9D3F85E3E91D97C7CA66 /* BeeBabyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeBabyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8C9F3815FF8258A58248BF /* icon-check-circle.svg */ = {isa = PBXFileReference; lastKnownFileType = file.svg; path = "icon-check-circle.svg"; sourceTree = "<group>"; };
 		BF8C9F46C197C940BFDD2246 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E28825E4F71D43198888EDA5 /* libPods-BeeBabyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeeBabyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB7F4401887953700AE839B /* BBMainControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMainControllerSpec.m; sourceTree = "<group>"; };
@@ -82,7 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				373910251897C893002E4BDC /* QuartzCore.framework in Frameworks */,
+				373910231897C876002E4BDC /* CoreText.framework in Frameworks */,
 				BF8C9FC9206ECEA761AEA352 /* Foundation.framework in Frameworks */,
+				373910211897C6D0002E4BDC /* Pixate.framework in Frameworks */,
 				BF8C958D410A3C8134EBF17D /* CoreGraphics.framework in Frameworks */,
 				BF8C95D804108A23FEB79DF8 /* UIKit.framework in Frameworks */,
 				FCDDD318FB254C8DBE98CE7F /* libPods-BeeBaby.a in Frameworks */,
@@ -92,6 +117,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF8C90390821F527CC7AA8EF /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				3739102F1897F2FF002E4BDC /* icon-gallery.svg */,
+				BF8C9CA2F796E1A53FDE075E /* icon-camera.svg */,
+				BF8C9F3815FF8258A58248BF /* icon-check-circle.svg */,
+				BF8C9C2DFF02FB49CD1C3A86 /* icon-check.svg */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
 		BF8C922972820974EBD984E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,8 +163,19 @@
 				BF8C92B58FF45F05145B8417 /* Images.xcassets */,
 				BF8C928AAA4C70E0D6DDF2C0 /* Sources */,
 				BF8C9E84FFD27719397C18F6 /* Storyboards */,
+				BF8C977D58C2206E9B19D741 /* Resources */,
 			);
 			path = BeeBaby;
+			sourceTree = "<group>";
+		};
+		BF8C977D58C2206E9B19D741 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF8C90390821F527CC7AA8EF /* Icons */,
+				BF8C9873DDA5BC83FC085B23 /* default.css */,
+				373910351899188D002E4BDC /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		BF8C986C79F043E966B350AF = {
@@ -146,6 +193,9 @@
 		BF8C99D9B6E331BF30434C71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				373910241897C893002E4BDC /* QuartzCore.framework */,
+				373910221897C876002E4BDC /* CoreText.framework */,
+				373910201897C6D0002E4BDC /* Pixate.framework */,
 				BF8C909B038C3C71059DDEBB /* Foundation.framework */,
 				BF8C99232E2EE0E0D11EFD89 /* CoreGraphics.framework */,
 				BF8C9F46C197C940BFDD2246 /* UIKit.framework */,
@@ -191,6 +241,8 @@
 				BF8C97661E0F4975C047DEF1 /* BBMainController.m */,
 				659B74DC527C279A8BC77854 /* BBImagePickerController.h */,
 				659B79B3B666E01D9A8FF89E /* BBImagePickerController.m */,
+				BF8C93B9AFA0FAD1FAAA55E0 /* BBImageCollectionViewController.m */,
+				BF8C9667ED67CFC68111FF64 /* BBImageCollectionViewController.h */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -272,7 +324,13 @@
 			files = (
 				BF8C931CFB484D2C8045824E /* InfoPlist.strings in Resources */,
 				BF8C9CA43111D800B4939BE1 /* Images.xcassets in Resources */,
+				373910301897F2FF002E4BDC /* icon-gallery.svg in Resources */,
+				373910331899188D002E4BDC /* Localizable.strings in Resources */,
 				BF8C92E3E66F7F0E77F71059 /* Main.storyboard in Resources */,
+				BF8C91802543E2CC0A86F84F /* default.css in Resources */,
+				BF8C9B636C3551CA2B3B79C0 /* icon-camera.svg in Resources */,
+				BF8C99B427FD367701956FE9 /* icon-check-circle.svg in Resources */,
+				BF8C910AB8B7CDE8D37CC585 /* icon-check.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +424,7 @@
 				BF8C9FD5C925D087753781D5 /* BBAppDelegate.m in Sources */,
 				BF8C937B6421FCA2DCD0F082 /* BBMainController.m in Sources */,
 				659B73C981A0829358DF0881 /* BBImagePickerController.m in Sources */,
+				BF8C937AFE91B273A99ADC88 /* BBImageCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +439,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		373910351899188D002E4BDC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3739103618991891002E4BDC /* en */,
+				3739103718991892002E4BDC /* pt */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		BF8C95F0A517D4537B390978 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -469,6 +537,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -509,6 +578,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -519,6 +589,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/marlon/Documents/GitHub/BeeBaby,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BeeBaby/BeeBaby-Prefix.pch";
 				INFOPLIST_FILE = "BeeBaby/BeeBaby-Info.plist";
@@ -533,6 +607,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/marlon/Documents/GitHub/BeeBaby,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BeeBaby/BeeBaby-Prefix.pch";
 				INFOPLIST_FILE = "BeeBaby/BeeBaby-Info.plist";
