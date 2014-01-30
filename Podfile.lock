@@ -23,6 +23,7 @@ PODS:
     - Kiwi/ARC
     - Kiwi/NonARC
   - NewRelicAgent (3.174)
+  - Pixate (2.0.1)
   - ReactiveCocoa (2.2):
     - ReactiveCocoa/Core
     - ReactiveCocoa/no-arc
@@ -34,12 +35,14 @@ DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - Kiwi/XCTest
   - NewRelicAgent (~> 3.0)
+  - Pixate (~> 2.0.1)
   - ReactiveCocoa (~> 2.0)
 
 SPEC CHECKSUMS:
   AFNetworking: e499052cbf3d743e9bb727bb37adb9dc2547ba15
   Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
   NewRelicAgent: f725b5d910ceb10bc0c6f7c326a4c40c21248ed4
+  Pixate: ced6ade02e1f202223abdab5494e25c28b562667
   ReactiveCocoa: 5b340678dc3168d6c9a2ca70fb83df683c08ca02
 
 COCOAPODS: 0.29.0

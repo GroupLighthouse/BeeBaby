@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 
-@interface BBImagePickerController : UIImagePickerController <UIImagePickerControllerDelegate>
+@interface BBImagePickerController : UIImagePickerController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 - (id)initWithSourceType:(UIImagePickerControllerSourceType)sourceType andView:(UIView *)cameraView;
 

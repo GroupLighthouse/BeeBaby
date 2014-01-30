@@ -49,9 +49,9 @@
 }
 
 - (IBAction)mark:(UITapGestureRecognizer *)tapRecognizer {
-    UIImageView *imageView = [tapRecognizer view];
+    UIImageView *imageView = (UIImageView *)[tapRecognizer view];
     UIView *check = [[imageView superview] viewWithTag:2];
-    if ([imageView styleClass] == @"opaque") {
+    if ([[imageView styleClass] isEqual: @"opaque"]) {
         [imageView setStyleClass:@"transparent"];
         [check setHidden:NO];
     } else {
