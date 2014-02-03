@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37122AA9189D953100B0DC51 /* BBFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 37122AA8189D953100B0DC51 /* BBFileUtils.m */; };
+		3720801E189FB7D200A87854 /* BBImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3720801D189FB7D200A87854 /* BBImageUtils.m */; };
 		373910301897F2FF002E4BDC /* icon-gallery.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3739102F1897F2FF002E4BDC /* icon-gallery.svg */; };
 		373910331899188D002E4BDC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 373910351899188D002E4BDC /* Localizable.strings */; };
 		659B73C981A0829358DF0881 /* BBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659B79B3B666E01D9A8FF89E /* BBImagePickerController.m */; };
@@ -45,6 +47,10 @@
 		00E5F8DAA30F47FE902407F3 /* libPods-BeeBaby.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeeBaby.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3711A32C188D4F3000179445 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3711A32D188D4F3000179445 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37122AA7189D953100B0DC51 /* BBFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBFileUtils.h; sourceTree = "<group>"; };
+		37122AA8189D953100B0DC51 /* BBFileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBFileUtils.m; sourceTree = "<group>"; };
+		3720801C189FB7D200A87854 /* BBImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBImageUtils.h; sourceTree = "<group>"; };
+		3720801D189FB7D200A87854 /* BBImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBImageUtils.m; sourceTree = "<group>"; };
 		3739102F1897F2FF002E4BDC /* icon-gallery.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "icon-gallery.svg"; sourceTree = "<group>"; };
 		3739103618991891002E4BDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3739103718991892002E4BDC /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -129,6 +135,10 @@
 			children = (
 				BF8C9AD3771802A64FD6E242 /* BBUIUtils.m */,
 				BF8C93538AD42251047BBC36 /* BBUIUtils.h */,
+				37122AA7189D953100B0DC51 /* BBFileUtils.h */,
+				37122AA8189D953100B0DC51 /* BBFileUtils.m */,
+				3720801C189FB7D200A87854 /* BBImageUtils.h */,
+				3720801D189FB7D200A87854 /* BBImageUtils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -414,11 +424,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3720801E189FB7D200A87854 /* BBImageUtils.m in Sources */,
 				BF8C9071B92D40A2D6C652BD /* main.m in Sources */,
 				BF8C9FD5C925D087753781D5 /* BBAppDelegate.m in Sources */,
 				BF8C937B6421FCA2DCD0F082 /* BBMainController.m in Sources */,
 				659B73C981A0829358DF0881 /* BBImagePickerController.m in Sources */,
 				BF8C937AFE91B273A99ADC88 /* BBImageCollectionViewController.m in Sources */,
+				37122AA9189D953100B0DC51 /* BBFileUtils.m in Sources */,
 				BF8C982CF8549A13880F547F /* BBTimelineTableViewController.m in Sources */,
 				BF8C9B21C6DDC074BED3C89E /* BBUIUtils.m in Sources */,
 			);

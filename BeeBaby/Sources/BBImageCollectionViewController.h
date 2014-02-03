@@ -8,6 +8,4 @@
 
 @interface BBImageCollectionViewController : UICollectionViewController <UICollectionViewDataSource>
 
-@property (strong, nonatomic) NSArray *images;
-
 @end

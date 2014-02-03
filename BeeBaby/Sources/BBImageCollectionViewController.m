@@ -6,8 +6,23 @@
 #import "BBImageCollectionViewController.h"
 #import "BBUIUtils.h"
 #import "BBTimelineTableViewController.h"
+#import "BBImageUtils.h"
+
+@interface BBImageCollectionViewController()
+
+    @property (strong, nonatomic) NSArray *images;
+
+@end
 
 @implementation BBImageCollectionViewController
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setImages:[[BBImageUtils mainInstance] loadImagesWithPrefix:BBImagePrefixThumbnail]];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

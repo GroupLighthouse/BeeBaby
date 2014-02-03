@@ -13,7 +13,7 @@
 
 @interface BBMainController ()
 
-@property (strong, nonatomic) IBOutlet UIView *cameraView;
+@property (weak, nonatomic) IBOutlet UIView *cameraView;
 @property (strong, nonatomic) BBImagePickerController *imagePickerController;
 
 @end
